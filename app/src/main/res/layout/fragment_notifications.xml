@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.insti.fragment.NotificationsFragment"
+    android:background="?attr/themeColor">
+
+    <TextView
+        android:id="@+id/no_notifs"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="?attr/themeColorInverse"
+        android:text="No notifications for now!" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notifications_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/loading_panel" />
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StudentProfileFragment">
+
+    <fragment
+        android:id="@+id/PostFragment"
+        android:name="com.example.yearbook.fragment.ScrollFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_post">
+
+        <action
+            android:id="@+id/action_PostFragment_to_SecondFragment"
+            app:destination="@id/StudentProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StudentProfileFragment"
+        android:name="com.example.yearbook.fragment.StudentProfileFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_student_profile">
+
+        <action
+            android:id="@+id/action_StudentProfileFragment_to_PostFragment"
+            app:destination="@id/PostFragment" />
+    </fragment>
+</navigation>

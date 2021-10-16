@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="themeColor">#FFFFFF</item>
+        <item name="themeColorInverse">#000000</item>
+        <item name="themeGray">#666666</item>
+        <item name="newsColor">#F2F2F2</item>
+        <item name="urlColor">@color/colorPrimary</item>
+        <item name="drawerCheckedColor">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="themeColor">#000000</item>
+        <item name="themeColorInverse">#FFFFFF</item>
+        <item name="themeGray">#aaaaaa</item>
+        <item name="newsColor">#00000000</item>
+        <item name="urlColor">@color/colorAccent</item>
+        <item name="drawerCheckedColor">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <style name="BlueAccent">
+        <item name="colorAccent">?attr/urlColor</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="QuickLinksHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">?attr/themeColorInverse</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="QuickLink">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">?attr/themeColorInverse</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTextAppearance</item>
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="edit_text_hint_apperarance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#999</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MatCalendarHeader" parent="TextAppearance.MaterialCalendarWidget.Header">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CalendarDateAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/mcv_text_date_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="UserTabsTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
